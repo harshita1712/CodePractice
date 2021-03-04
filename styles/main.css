@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+    background: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: aqua;
+  }
+  h1,h2,h3,h4 {
+    font-size: 38px;
+    color: #222;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+   
+    position: relative;
+    transition: all .3s;
+   
+}
+
+.navbar-toggler .toggler-icon {
+    width: 30px;
+    height: 2px;
+    background-color: #276edf;
+    display: block;
+    margin: 5px 0;
+    position: relative;
+    transition: all .3s;
+
+}
+
+.navbar-toggler.active .toggler-icon:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 17px;
+    
+}
+
+.navbar-toggler.active .toggler-icon:nth-of-type(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.active .toggler-icon:nth-of-type(3) {
+    transform: rotate(135deg);
+    top: -7px;
+}
